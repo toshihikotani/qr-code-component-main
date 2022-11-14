@@ -1,0 +1,57 @@
+@import "typography.css";
+
+:root {
+    --white:hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: var(--light-gray);
+}
+
+/* WRAPPER */
+#wrapper {
+    max-width: 375px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* CONTENT */
+.white-box {
+    background-color: var(--white);
+    border-radius: 25px;
+    width: 290px;
+    height: 460px;
+    padding: 15px;
+    text-align: center;
+}
+
+.white-box > img { 
+    width: 290px;
+    height: 290px;
+    border-radius: 25px;
+}
+
+.white-box > h2 {
+    font-family: 'Outfit-Bold';
+    color: var(--dark-blue);
+}
+
+.white-box > p {
+    font-family: 'Outfit-Regular';
+    color: var(--grayish-blue);
+}
+
+/* ATTRIBUTION */
+.attribution {
+    font-family: 'Outfit-Regular';
+    text-align: center;
+}
