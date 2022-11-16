@@ -17,7 +17,8 @@ body {
 /* WRAPPER */
 #wrapper {
     max-width: 375px;
-    margin: 0 auto;
+    margin: 0px auto;
+    padding: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,4 +55,33 @@ body {
 .attribution {
     font-family: 'Outfit-Regular';
     text-align: center;
+}
+
+/* PORTRAIT TABLET */
+@media only screen and (min-width: 600px)  {
+    /* WRAPPER */
+    #wrapper {
+        padding: 50px 0;
+    }
+}
+
+/* LANDSCAPE TABLET */
+@media only screen and (min-width: 768px)  {
+    /* WRAPPER */
+    #wrapper {
+        padding: 65px 0;
+    }
+}
+
+/* LAPTOPS / DESKTOPS */
+@media only screen and (min-width: 992px)  {
+    /* WRAPPER */
+    #wrapper {
+        padding: 100px 0;
+    }
+}
+
+/* LARGE LAPTOPS / DESKTOPS  */
+@media only screen and (min-width: 1200px)  {
+    
 }
