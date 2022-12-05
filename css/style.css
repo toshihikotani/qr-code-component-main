@@ -7,18 +7,26 @@
     --dark-blue: hsl(218, 44%, 22%);
 }
 
+html, body {
+    min-width: 100vw;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-size: 16px;
     background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 /* WRAPPER */
 #wrapper {
-    max-width: 375px;
+    width: 100%;
+    /* max-width: 375px; */
     margin: 0px auto;
-    padding: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,26 +67,14 @@ body {
 
 /* PORTRAIT TABLET */
 @media only screen and (min-width: 600px)  {
-    /* WRAPPER */
-    #wrapper {
-        padding: 50px 0;
-    }
 }
 
 /* LANDSCAPE TABLET */
 @media only screen and (min-width: 768px)  {
-    /* WRAPPER */
-    #wrapper {
-        padding: 65px 0;
-    }
 }
 
 /* LAPTOPS / DESKTOPS */
 @media only screen and (min-width: 992px)  {
-    /* WRAPPER */
-    #wrapper {
-        padding: 100px 0;
-    }
 }
 
 /* LARGE LAPTOPS / DESKTOPS  */
