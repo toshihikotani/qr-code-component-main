@@ -49,7 +49,7 @@ body {
     border-radius: 25px;
 }
 
-.white-box > h2 {
+.white-box > h3 {
     font-family: 'Outfit-Bold';
     color: var(--dark-blue);
 }
