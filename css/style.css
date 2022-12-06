@@ -22,8 +22,8 @@ body {
     height: 100vh;
 }
 
-/* WRAPPER */
-#wrapper {
+/* MAIN CONTENT */
+main {
     width: 100%;
     /* max-width: 375px; */
     margin: 0px auto;
@@ -40,29 +40,36 @@ body {
     width: 290px;
     height: 460px;
     padding: 15px;
-    text-align: center;
 }
 
-.white-box > img { 
+.white-box > .image-box { 
     width: 290px;
     height: 290px;
+}
+
+.white-box > .image-box > img { 
+    width: 100%;
+    height: 100%;
     border-radius: 25px;
 }
 
-.white-box > h3 {
-    font-family: 'Outfit-Bold';
-    color: var(--dark-blue);
+.white-box > .details > .title,
+.white-box > .details > .description {
+    text-align: center;
 }
 
-.white-box > p {
+.white-box > .details > .title {
+    font-family: 'Outfit-Bold';
+    font-size: 22px;
+    color: var(--dark-blue);
+    margin: 20px auto;
+}
+
+.white-box > .details > .description {
     font-family: 'Outfit-Regular';
     color: var(--grayish-blue);
-}
-
-/* ATTRIBUTION */
-.attribution {
-    font-family: 'Outfit-Regular';
-    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* PORTRAIT TABLET */
@@ -78,6 +85,5 @@ body {
 }
 
 /* LARGE LAPTOPS / DESKTOPS  */
-@media only screen and (min-width: 1200px)  {
-    
+@media only screen and (min-width: 1200px)  {    
 }
